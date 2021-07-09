@@ -1,0 +1,158 @@
+/* Reset */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Buttons */
+.btn-profile {
+	position: relative;
+	background-color: #f26d21;
+	color: #fff;
+	border: none;
+	margin-left: 20px;
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	border-radius: 8px;
+}
+.btn-profile::before {
+	content: '';
+	display: block;
+	position: absolute;
+	height: 8px;
+	width: 8px;
+	background-color: lightgreen;
+	right: -4px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    top: -4px;
+}
+
+/* Header */
+header {
+	position: relative;
+	background-color: #f2f2f5;
+	height: 60px;
+}
+
+.header-center, .header-right {
+	height: 100%;
+}
+
+.header-center {
+	margin: auto;
+	width: 20%;
+}
+.header-right {
+	position: absolute;
+	top: 0;
+	right: 20px;
+	display: flex;
+	align-items: center;
+}
+
+.header-right .search{
+    background-color: lightgray;
+	background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/1024px-Search_Icon.svg.png');
+    background-size: 20px 20px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	border: none;
+    padding: 5px 5px 5px 25px;
+    border-radius: 5px;
+}
+
+.header-center-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+	height: 100%;
+}
+
+.header-center-nav  li {
+	text-align: center;
+}
+
+/* Main */
+
+main {
+	position: relative;
+	height: calc(100vh - 60px);
+	display: flex;
+}
+
+.content {
+	display: flex;
+	margin: auto;
+	max-width: 650px;
+}
+
+.content-left {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: center;
+	width: 45%;
+	margin-right: 35px;
+}
+.content-left .item {
+	width: calc(50% - 20px);
+	text-align: center;
+	margin: 10px;
+}
+
+.content-left .item > i {
+	width: 90px;
+	height: 90px;
+	line-height: 90px;
+	border-radius: 25px;
+	font-size: 30px;
+	color: #fff;
+	background-color: #0e72ed;
+}
+.content-left .item:first-child > i {
+	background-color: #f26d21;
+}
+
+.content-right {
+	width: 55%;
+}
+
+.card {
+	box-shadow: 3px 3px 8px #ddd;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.card-header {
+	background-color: #354a60;
+	color: #fff;
+	text-align: center;
+	padding: 25px 0;
+}
+
+.card-header .hour {
+	font-size: 30px;
+	font-weight: bold;
+}
+.card-header .day {
+	font-size: 14px;
+} 
+
+.card-content {
+	height: 350px;
+	overflow-y: auto;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+.settings {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+}
